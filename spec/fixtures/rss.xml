@@ -12,15 +12,14 @@
     <copyright>NA</copyright>
     <lastBuildDate>Mon, 09 Sep 2024 19:28:22 +0000</lastBuildDate>
     <item>
-      <title>Folk with Matt Watroba 2024-09-08</title>
+      <title>Folk with Matt Watro (WKAR) 08/25/24 01</title>
       <link>https://www.wkar.org</link>
-      <description>Folk with Matt Watroba 2024-09-08</description>
-      <enclosure
-        url="https://folkpodcast.up.railway.app/show/Folk%20with%20Matt%20Watroba%202024-09-08.mp3"
-        length="176479432"
-        type="audio/mpeg" />
-      <pubDate>Sun, 08 Sep 2024 04:00:00 -0000</pubDate>
-      <guid isPermaLink="false">89d92c50-41a7-470f-82a0-d98ea9d86c90</guid>
+      <description>Folk with Matt Watro (WKAR) 08/25/24 01</description>
+      <enclosure url="https://example.com/show.mp3"
+        length="1234"
+        type="audio/mpeg"/>
+      <pubDate>Sun, 25 Aug 2024 23:16:59 +0000</pubDate>
+      <guid isPermaLink="false">80a0fc2f-e1f8-43da-8b7f-2bf5d8766080</guid>
     </item>
   </channel>
 </rss>

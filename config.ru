@@ -1,2 +1,3 @@
-require './app'
+require "dotenv/load"
+require "./app"
 run Sinatra::Application
