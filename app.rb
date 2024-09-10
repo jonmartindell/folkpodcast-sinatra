@@ -13,7 +13,7 @@ end
 get "/show/*.*" do |path, ext|
   # [path, ext] # => ["path/to/file", "xml"]
   gdrive = GDrive.new
-  file = gdrive.read_file(concat(path, ".", ext))
+  file = gdrive.read_file(path.concat(".", ext))
   file.download_to_file("data/output.mp3")
   send_file "data/output.mp3"
 end
