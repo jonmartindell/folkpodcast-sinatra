@@ -12,7 +12,7 @@ get "/podcast.xml" do
     # try to update the list of songs
     existing_files = rss_generator.items.map(&:title)
     gdrive = GDrive.new
-    gdrive.list_files.each do |show_filename|
+    gdrive.list_files.sort.each do |show_filename|
       title = show_filename.sub(".mp3", "")
       if !existing_files.include?(title)
         file = gdrive.read_file(show_filename)

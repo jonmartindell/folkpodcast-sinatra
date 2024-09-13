@@ -17,13 +17,17 @@ class RssGenerator
   end
 
   def add_show(title:, url:, date:, length_bytes:)
-    new_item = items.first.dup
+    new_item = RSS::Rss::Channel::Item.new
     new_item.title = title
+    new_item.link = "https://www.wkar.org"
     new_item.description = title
     new_item.pubDate = date.utc
+    new_item.enclosure = RSS::Rss::Channel::Item::Enclosure.new
     new_item.enclosure.url = url
     new_item.enclosure.length = length_bytes
+    new_item.enclosure.type = "audio/mpeg"
     items << new_item
+    true
   end
 
   def save!(out_file: DEFAULT_FILENAME)
