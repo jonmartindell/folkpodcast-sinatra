@@ -15,12 +15,19 @@
       <title>Folk with Matt Watroba 2024-09-08</title>
       <link>https://www.wkar.org</link>
       <description>Folk with Matt Watroba 2024-09-08</description>
-      <enclosure
-        url="https://folkpodcast.up.railway.app/show/Folk%20with%20Matt%20Watroba%202024-09-08.mp3"
-        length="176479432"
-        type="audio/mpeg" />
+      <enclosure url="https://folkpodcast.up.railway.app/show/Folk with Matt Watroba 2024-09-01.mp3"
+        length="158046726"
+        type="audio/mpeg"/>
       <pubDate>Sun, 08 Sep 2024 04:00:00 -0000</pubDate>
-      <guid isPermaLink="false">89d92c50-41a7-470f-82a0-d98ea9d86c90</guid>
+    </item>
+    <item>
+      <title>Folk with Matt Watroba 2024-09-01</title>
+      <link>https://www.wkar.org</link>
+      <description>Folk with Matt Watroba 2024-09-01</description>
+      <enclosure url="https://folkpodcast.up.railway.app/show/Folk with Matt Watroba 2024-09-01.mp3"
+        length="158046726"
+        type="audio/mpeg"/>
+      <pubDate>Sun, 01 Sep 2024 04:00:00 -0000</pubDate>
     </item>
   </channel>
 </rss>
