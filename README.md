@@ -1,9 +1,5 @@
 ---
-title: Sinatra
-description: A Sinatra webserver
-tags:
-  - ruby
-  - sinatra
+title: Podcast for Folk Music Show
 ---
 
 # Sinatra Example
