@@ -15,10 +15,9 @@ get "/podcast.xml" do
     gdrive.list_files.sort.each do |show_filename|
       title = show_filename.sub(".mp3", "")
       if !existing_files.include?(title)
-        file = gdrive.read_file(show_filename)
         date = Date.parse(title).to_time
         show_url = "https://folkpodcast.up.railway.app/show/#{show_filename}"
-        rss_generator.add_show(title: title, url: show_url, date: date, length_bytes: file.size)
+        rss_generator.add_show(title: title, url: show_url, date: date, length_bytes: 176478043)
       end
     end
     rss_generator.save!
