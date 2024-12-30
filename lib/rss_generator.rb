@@ -13,7 +13,7 @@ class RssGenerator
   end
 
   def days_since_update
-    (Date.parse(Time.now.to_s) - Date.parse(@mtime.to_s)).to_i
+    (Date.parse(Time.now.to_s) - Date.parse(channel.lastBuildDate.to_s)).to_i
   end
 
   def add_show(title:, url:, date:, length_bytes:)
@@ -31,6 +31,7 @@ class RssGenerator
   end
 
   def save!(out_file: DEFAULT_FILENAME)
+    channel.lastBuildDate = Time.now
     File.write(out_file, @rss)
   end
 end
