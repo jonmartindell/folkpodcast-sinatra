@@ -16,7 +16,7 @@ get "/podcast.xml" do
       title = show_filename.sub(".mp3", "")
       if !existing_files.include?(title)
         date = Date.parse(title).to_time
-        show_url = "https://folkpodcast.up.railway.app/show/#{show_filename}"
+        show_url = "https://folkpodcast-sinatra-production.up.railway.app/show/#{show_filename}"
         rss_generator.add_show(title: title, url: show_url, date: date, length_bytes: 176478043)
       end
     end
